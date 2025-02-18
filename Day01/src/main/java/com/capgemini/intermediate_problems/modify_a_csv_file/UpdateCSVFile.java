@@ -35,8 +35,8 @@ public class UpdateCSVFile {
                     double salary = Double.parseDouble(data[3].trim());
 
 
-                    if(department.equalsIgnoreCase("AIML")){
-                        salary *= 2;
+                    if(department.equalsIgnoreCase("IT")){
+                        salary += salary * 0.1;
                     }
 
                     updatedFileData.add(new String[]{id, name, department, String.valueOf(salary)});
